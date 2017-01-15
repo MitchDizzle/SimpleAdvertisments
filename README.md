@@ -22,4 +22,4 @@ Use the {02}!command{01} to open some menu.
 ```
 
 # Colors
-![CSGO Chat Colors](https://github.com/MitchDizzle/SimpleAdvertisments/raw/master/src/colors.png "CSGO Chat Colors")
+![CSGO Chat Colors](https://github.com/MitchDizzle/SimpleAdvertisments/blob/master/colors.png?raw=true "CSGO Chat Colors")
