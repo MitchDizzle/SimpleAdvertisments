@@ -1,3 +1,4 @@
+#define PLUGIN_VERSION "1.0.0"
 public Plugin myinfo = {
     name = "Simple Advertisments",
     author = "Mitch",
@@ -18,6 +19,7 @@ public void OnPluginStart() {
 	cEnabled.AddChangeHook(ConVarChanged);
 	cTime.AddChangeHook(ConVarChanged);
 	AutoExecConfig(true, "SimpleAds");
+	CreateConVar("sm_simpleads_version", PLUGIN_VERSION, "Simple Advertisments Version", FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_DONTRECORD);
 }
 
 public void OnMapStart() {
