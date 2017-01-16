@@ -1,9 +1,9 @@
-#define PLUGIN_VERSION "1.0.0"
+#define PLUGIN_VERSION "1.0.1"
 public Plugin myinfo = {
     name = "Simple Advertisments",
     author = "Mitch",
     description = "Spams chat",
-    version = "1.0.0",
+    version = PLUGIN_VERSION,
     url = "mtch.tech"
 };
 
@@ -26,6 +26,10 @@ public void OnMapStart() {
 	parseColors();
 	parseAds();
 	createTimer();
+}
+
+public void OnMapEnd() {
+	timerAdvertisments = null;
 }
 
 public void createTimer() {
